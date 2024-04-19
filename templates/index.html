@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detect fraudulent claims in the consumer electronics industry </title>
+</head>
+<body>
+
+  <h1>Detect fraudulent claims in the consumer electronics industry </h1>
+  {% if result %}
+  <p>{{ result }}</p>
+  {% endif %}
+<form method="post" action="/predict">
+    <label>Product_Age</label><br>
+    <input type="text" name="Product_Age"><br>
+    <label>Service_Centre</label><br>
+    <input type="text" name="Service_Centre"><br>
+    <label>Claim_Value</label><br>
+    <input type="text" name="Claim_Value"><br>
+
+    <input type="submit" value="Predict"><br><br>
+</form>
+
+</body>
+</html>
